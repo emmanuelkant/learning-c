@@ -1,0 +1,1 @@
+mkdir program$1 && cp main.c program$1 && git add . && git commit -m "No Message" && git push origin master
