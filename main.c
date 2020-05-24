@@ -1,19 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 1024
+#define SIZE 64
 
 int main() {
-  
-  char *sto;
 
-  sto = malloc(sizeof(char) * SIZE);
-  if ( sto == NULL ) {
-    puts("Memory Error");
+  char *name = malloc(sizeof(char) * SIZE);
+
+  if (name == NULL) {
+    puts("Erro when trying to allocate memory");
     return 1;
-  } else {
-    printf("%d bytes of memory allocated at %p\n", SIZE, sto);
   }
+
+  printf("Enter with your name: ");
+
+  fgets(name, SIZE, stdin);
+
+  printf("Hello World, %s\n", name);
+
+
+
 
   return 0;
 }
