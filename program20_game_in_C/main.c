@@ -20,7 +20,7 @@ int main() {
   struct character player;
 
   printf("Hi welcome to the game\n");
-  printf("Say your name character: ");
+  printf("Say the name of your character: ");
   fgets(player.name, 32, stdin);
   player.life = randStat(15, 20);
   player.power = randStat(3, 6);
